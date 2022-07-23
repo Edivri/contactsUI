@@ -42,7 +42,7 @@ class _ContactListState extends State<ContactList> {
         SizedBox(height: 20),
         Center(
           child: Text(
-            'Sua lista de contatos está vazia',
+            'Your contact list is empty',
             style: TextStyle(fontSize: 18),
           ),
         ),
@@ -55,9 +55,9 @@ class _ContactListState extends State<ContactList> {
             );
           },
           child: Text(
-            "ADICIONAR CONTATO",
+            "ADD CONTACT",
             style: TextStyle(
-              color: Colors.indigo,
+              color: Colors.teal,
               fontSize: 14,
               fontWeight: FontWeight.bold,
             ),
@@ -72,9 +72,9 @@ class _ContactListState extends State<ContactList> {
             );
           },
           child: Text(
-            "SOBRE",
+            "ON",
             style: TextStyle(
-              color: Colors.indigo,
+              color: Colors.teal,
               fontSize: 14,
               fontWeight: FontWeight.bold,
             ),
@@ -89,11 +89,11 @@ class _ContactListState extends State<ContactList> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: new Text("Deseja excluir o contato?"),
+          title: new Text("Do you want to exclude or contact?"),
           content: new Text(item['name']),
           actions: <Widget>[
             new FlatButton(
-              child: new Text("Cancelar"),
+              child: new Text("Cancel"),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -132,7 +132,7 @@ class _ContactListState extends State<ContactList> {
                 PopupMenuItem(
                   child: FlatButton(
                     child: Text(
-                      "Editar",
+                      "Edit",
                       style: TextStyle(fontSize: 16),
                     ),
                     onPressed: () {
@@ -148,7 +148,7 @@ class _ContactListState extends State<ContactList> {
                 PopupMenuItem(
                   child: FlatButton(
                     child: Text(
-                      "Excluir",
+                      "Exclude",
                       style: TextStyle(fontSize: 16),
                     ),
                     onPressed: () {
@@ -175,7 +175,7 @@ class _ContactListState extends State<ContactList> {
                 ),
               ),
               trailing: item['favorite'] == 1
-                  ? Icon(Icons.star, color: Colors.indigo)
+                  ? Icon(Icons.star, color: Colors.teal)
                   : Icon(Icons.star_border),
               title: Text(
                 item['name'],
