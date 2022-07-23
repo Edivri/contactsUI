@@ -208,7 +208,7 @@ class _ViewPageState extends State<ViewPage> {
                 style: TextStyle(color: Colors.black54),
               ),
               leading: IconButton(
-                icon: Icon(Icons.phone, color: Colors.indigo),
+                icon: Icon(Icons.phone, color: Colors.teal),
                 onPressed: () {
                   _launchCaller(phoneNumber);
                 },
@@ -229,7 +229,7 @@ class _ViewPageState extends State<ViewPage> {
                 style: TextStyle(color: Colors.black54),
               ),
               leading: IconButton(
-                  icon: Icon(Icons.email, color: Colors.indigo),
+                  icon: Icon(Icons.email, color: Colors.teal),
                   onPressed: () {}),
             ),
           ),
@@ -243,7 +243,7 @@ class _ViewPageState extends State<ViewPage> {
                 style: TextStyle(color: Colors.black54),
               ),
               leading: IconButton(
-                  icon: Icon(Icons.share, color: Colors.indigo),
+                  icon: Icon(Icons.share, color: Colors.teal),
                   onPressed: () {
                     Share.share("""
                         Name: $nome
@@ -264,7 +264,7 @@ class _ViewPageState extends State<ViewPage> {
                     ),
                     leading: IconButton(
                         icon: Icon(FontAwesomeIcons.whatsapp,
-                            color: Colors.indigo),
+                            color: Colors.teal),
                         onPressed: () {
                           whatsAppOpen(phoneNumber.toString(), "");
                         }),
