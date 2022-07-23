@@ -13,9 +13,9 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   HomeBloc bloc;
-  Widget appBarTitle = new Text("Contatos");
+  Widget appBarTitle = new Text("Contacts");
   Icon actionIcon = new Icon(Icons.search);
-  Color color = Colors.indigo;
+  Color color = Colors.teal;
   bool searching = false;
   final _cSearch = TextEditingController();
 
@@ -54,13 +54,13 @@ class _HomePageState extends State<HomePage> {
                           if (this.actionIcon.icon == Icons.search) {
                             this.actionIcon = new Icon(
                               Icons.close,
-                              color: Colors.indigo,
+                              color: Colors.teal,
                             );
                             this.color = Colors.white;
                             this.appBarTitle = new TextField(
                               controller: _cSearch,
                               style: new TextStyle(
-                                color: Colors.indigo,
+                                color: Colors.teal,
                               ),
                               autofocus: true,
                               onChanged: (value) {
@@ -69,10 +69,10 @@ class _HomePageState extends State<HomePage> {
                               },
                               decoration: new InputDecoration(
                                   prefixIcon: new Icon(Icons.search,
-                                      color: Colors.indigo),
-                                  hintText: "Pesquisar contatos",
+                                      color: Colors.teal),
+                                  hintText: "research contacts",
                                   hintStyle:
-                                      new TextStyle(color: Colors.indigo)),
+                                      new TextStyle(color: Colors.teal)),
                             );
                           } else {
                             _cSearch.clear();
@@ -80,8 +80,8 @@ class _HomePageState extends State<HomePage> {
                             this.actionIcon = new Icon(
                               Icons.search,
                             );
-                            this.color = Colors.indigo;
-                            this.appBarTitle = new Text("Contatos");
+                            this.color = Colors.teal;
+                            this.appBarTitle = new Text("Contacts");
                             // bloc.getListContact();
                           }
                         });
@@ -91,7 +91,7 @@ class _HomePageState extends State<HomePage> {
                 );
               } else {
                 return AppBar(
-                  title: Text("Contatos"),
+                  title: Text("Contacts"),
                 );
               }
             }
@@ -117,7 +117,7 @@ class _HomePageState extends State<HomePage> {
                   Center(
                       child: Padding(
                     padding: const EdgeInsets.all(10),
-                    child: Text("Nenhum contato localizado"),
+                    child: Text("localized contact"),
                   )),
                 ],
               );
