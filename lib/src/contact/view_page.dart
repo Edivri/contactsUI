@@ -19,7 +19,7 @@ class ViewPage extends StatefulWidget {
 }
 
 class _ViewPageState extends State<ViewPage> {
-  static String defaultMessage = "Não informado";
+  static String defaultMessage = "Not informed";
 
   bool existWhatsapp = false;
   Map contact;
@@ -204,7 +204,7 @@ class _ViewPageState extends State<ViewPage> {
                   ? phoneNumber
                   : defaultMessage),
               subtitle: Text(
-                "Telefone",
+                "Phone",
                 style: TextStyle(color: Colors.black54),
               ),
               leading: IconButton(
@@ -236,17 +236,17 @@ class _ViewPageState extends State<ViewPage> {
           Card(
             child: ListTile(
               title: Text(
-                "Enviar contato",
+                "send contact",
               ),
               subtitle: Text(
-                "Compartilhar",
+                "share",
                 style: TextStyle(color: Colors.black54),
               ),
               leading: IconButton(
                   icon: Icon(Icons.share, color: Colors.indigo),
                   onPressed: () {
                     Share.share("""
-                        Nome: $nome
+                        Name: $nome
                         Tel: $phoneNumber
                       """);
                   }),
@@ -256,7 +256,7 @@ class _ViewPageState extends State<ViewPage> {
             child: existWhatsapp
                 ? ListTile(
                     title: Text(
-                      "Abrir no Whatsapp",
+                      "open not whatsapp",
                     ),
                     subtitle: Text(
                       "Whatsapp",
