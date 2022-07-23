@@ -18,7 +18,7 @@ class _AboutPageState extends State<AboutPage> {
         Scaffold.of(context).showSnackBar(
           SnackBar(
             content: Text(
-                'Não foi possível abrir o site, tente novamente mais tarde'),
+                'It was not possible to open the site, try again later'),
             duration: Duration(seconds: 15),
           ),
         );
@@ -29,7 +29,7 @@ class _AboutPageState extends State<AboutPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Sobre")),
+      appBar: AppBar(title: Text("On")),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -44,14 +44,14 @@ class _AboutPageState extends State<AboutPage> {
             ),
           ),
           SizedBox(height: 10),
-          Center(child: Text('App Contatos', style: TextStyle(fontSize: 16))),
+          Center(child: Text('App Contacts', style: TextStyle(fontSize: 16))),
           SizedBox(height: 20),
           Center(
             child: Text('App Flutter by:'),
           ),
           Center(
             child: Text(
-              "Rogerio Sobrinho",
+              "Jan Doe",
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,
@@ -66,14 +66,14 @@ class _AboutPageState extends State<AboutPage> {
                 IconButton(
                   icon: Icon(FontAwesomeIcons.github),
                   onPressed: () => _openExternalLink(
-                    "https://github.com/RogerioSobrinho",
+                    "https://github.com/Edivri",
                     context,
                   ),
                 ),
                 IconButton(
                   icon: Icon(FontAwesomeIcons.linkedin),
                   onPressed: () => _openExternalLink(
-                    "https://linkedin.com/in/rogerio-sobrinho/",
+                    "https://github.com/Edivri/",
                     context,
                   ),
                 ),
