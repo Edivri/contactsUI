@@ -164,7 +164,7 @@ class _ViewPageState extends State<ViewPage> {
 
   Container buildHeader(BuildContext context, String name) {
     return Container(
-      decoration: BoxDecoration(color: Colors.indigo),
+      decoration: BoxDecoration(color: Colors.teal),
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height * 0.40,
       child: Column(
