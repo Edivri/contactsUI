@@ -9,10 +9,10 @@ class AppWidget extends StatelessWidget {
       HomePage.tag: (context) => HomePage(),
     };
     return MaterialApp(
-      title: 'Flutter Slidy',
+      title: 'Flutter Contact',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        primarySwatch: Colors.teal,
       ),
       home: HomeModule(),
       routes: routes,
