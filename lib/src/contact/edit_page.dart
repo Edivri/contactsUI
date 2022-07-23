@@ -47,12 +47,12 @@ class _EditPageState extends State<EditPage> {
       ],
       keyboardType: TextInputType.text,
       decoration: InputDecoration(
-        labelText: 'Nome',
+        labelText: 'Name',
         icon: Icon(Icons.person),
       ),
       validator: (value) {
         if (value.isEmpty) {
-          return 'Obrigatório';
+          return 'Mandatory';
         }
         return null;
       },
@@ -65,7 +65,7 @@ class _EditPageState extends State<EditPage> {
       ],
       keyboardType: TextInputType.text,
       decoration: InputDecoration(
-        labelText: 'Apelido',
+        labelText: 'Surname',
         icon: Icon(Icons.person),
       ),
     );
@@ -77,7 +77,7 @@ class _EditPageState extends State<EditPage> {
       ],
       keyboardType: TextInputType.text,
       decoration: InputDecoration(
-        labelText: 'Trabalho',
+        labelText: 'Work',
         icon: Icon(Icons.work),
       ),
     );
@@ -88,7 +88,7 @@ class _EditPageState extends State<EditPage> {
       maxLength: 16,
       keyboardType: TextInputType.phone,
       inputDecoration: new InputDecoration(
-        labelText: "Telefone",
+        labelText: "Phone",
         icon: Icon(Icons.phone),
       ),
     );
@@ -112,7 +112,7 @@ class _EditPageState extends State<EditPage> {
       ],
       keyboardType: TextInputType.text,
       decoration: InputDecoration(
-        labelText: 'Site da Web',
+        labelText: 'My Website',
         icon: Icon(Icons.web),
       ),
     );
@@ -163,13 +163,13 @@ class _EditPageState extends State<EditPage> {
               Navigator.of(context).pop();
             },
           ),
-          title: Text("Editar contato"),
+          title: Text("Edit Contact"),
           actions: <Widget>[
             Container(
               width: 80,
               child: IconButton(
                 icon: Text(
-                  'SALVAR',
+                  'SAVE',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
                 onPressed: () {
